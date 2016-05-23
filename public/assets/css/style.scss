@@ -1,0 +1,47 @@
+@font-face {
+	font-family: "SF";
+	src: url("../fonts/San Francisco Display Thin.ttf");
+}
+
+body {
+	background: black;
+	color: #FFF;
+	font-family: "SF";
+}
+
+.B1, .B2, .B3 {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: 35%;
+	height: calc((100% - 100px)/3);
+	background: black;
+}
+
+.B2 {
+	top: calc(50px + (100% - 100px)/3);
+	background: black;
+}
+
+.B3 {
+	top: calc(50px + 2*(100% - 100px)/3);
+	background: black;
+}
+
+.main-msg {
+	position: absolute;
+	top: 50px;
+	left: calc(50px + 35%);
+	width: calc(65% - 100px);
+	height: 20%;
+	background: black;
+}
+
+.B4 {
+	position: absolute;
+	bottom: 0px;
+	left: 40%;
+	width: 60%;
+	height: 25%;
+	background: black;
+}

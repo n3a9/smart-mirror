@@ -1,15 +1,22 @@
 {
-	"name": "smart-mirror",
-	"version": "0.1.0",
-	"description": "Software for a smart mirror that informs the user of basic weather and calendar events.",
-	"author": "Sahibjot Saggu <sahibjot@live.ca>",
-	"start": "npm start",
-	"main": "config.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/sahibjotsaggu/smart-mirror.git"
-	},
-	"bugs": {
-		"url": "https://github.com/sahibjotsaggu/smart-mirror/issues"
-	}
+  "name": "smart-mirror",
+  "version": "0.1.0",
+  "description": "Software for a smart mirror that informs the user of basic weather and calendar events.",
+  "author": "Sahibjot Saggu <sahibjot@live.ca>",
+  "start": "npm start",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sahibjotsaggu/smart-mirror.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sahibjotsaggu/smart-mirror/issues"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "livereload": "^0.4.1"
+  }
 }

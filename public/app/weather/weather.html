@@ -1,0 +1,35 @@
+<style type="text/css">
+
+.temperature {
+	font-size: 80px;
+}
+
+.temp_desc, .high_low {
+	width: 40%;
+	font-size: 33px;
+	line-height: 40px;
+}
+
+.high_low {
+	font-size: 25px;
+}
+
+.wi {
+	font-size: 70px;
+}
+
+</style>
+
+<div class="container">
+	<div class="row">
+		<div class="temperature">{{ weather.temp }} &deg;&nbsp;<span><i class="wi {{ weather.imageCode }}"></i></span></div>
+	</div>
+	<div class="row">
+		<div class="temp_desc">{{ weather.description }}</div>
+	</div>
+	<div class="row">
+		<div class="high_low">High of {{ weather.high }} &deg; /&nbsp; Low of {{weather.low }} &deg;</div>
+	</div>
+</div>
+
+<img src="http://openweathermap.org/img/w/{{ weather.image }}.png">
