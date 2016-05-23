@@ -1,5 +1,42 @@
+<style type="text/css">
+	.timeText {
+		width: 100%;
+		text-align: right;
+		margin: 0px;
+		padding: 0px;
+	}
+</style>
+<!--
 <div class="row" style="float: right; margin-right: 0px; font-size: 60px;">
 	<div ng-controller="TimeController as time">
 		<span current-time="time.format"></span>
 	</div>
+	<div class="date">
+	Monday, May 23, 2016
+	</div>
+</div>-->
+<!--
+<div style="float: right; margin-right: 20px; font-size: 60px;">
+	<div class="row" ng-controller="TimeController as time">
+		<span current-time="time.format"></span>
+	</div>
+
+	<div class="row" style="font-size: 40px;" ng-controller="DayController as day">
+		<span current-day="day.format"></span>
+	</div>
+	<div class="row" style="font-size: 35px;">
+	May 23, 2016
+	</div>
 </div>
+-->
+<p class="timeText" ng-controller="TimeController as time" style="font-size: 60px;">
+	<span current-time="time.format"></span>
+</p>
+
+<p class="timeText" ng-controller="DayController as day" style="font-size: 40px;">
+	<span current-day="day.format"></span>
+</p>
+
+<p class="timeText" ng-controller="DateController as date" style="font-size: 40px;">
+	<span current-date="date.format"></span>
+</p>

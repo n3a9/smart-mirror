@@ -1,12 +1,12 @@
 'use strict';
 
-var time = angular.module('app.time', []);
+var date = angular.module('app.date', []);
 
-time.directive('currentTime', function(dateFilter) {
+date.directive('currentDate', function(dateFilter) {
 	return function(scope, element, attrs) {
 		var format;
 
-		scope.$watch(attrs.currentTime, function(value) {
+		scope.$watch(attrs.currentDate, function(value) {
 			format = value;
 			updateTime();
 		});
