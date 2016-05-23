@@ -20,6 +20,11 @@ function configure($stateProvider, $urlRouterProvider) {
 				templateUrl: 'app/mainScreen/mainScreen.html',
 				controller: 'MainScreenController',
 				controllerAs: 'mainScreen'
+			},
+			'news': {
+				templateUrl: 'app/news/news.html',
+				controller: 'NewsController',
+				controllerAs: 'news'
 			}
 		}
 	});

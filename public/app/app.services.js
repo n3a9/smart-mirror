@@ -2,5 +2,6 @@
 
 angular.module('app.services', [
 	'WeatherService',
+	'NewsService',
 	'DataService'
 ]);

@@ -9,22 +9,12 @@ body {
 	font-family: "SF";
 }
 
-.B1, .B2, .B3 {
+.weather {
 	position: absolute;
 	top: 50px;
 	left: 50px;
 	width: 35%;
 	height: calc((100% - 100px)/3);
-	background: black;
-}
-
-.B2 {
-	top: calc(50px + (100% - 100px)/3);
-	background: black;
-}
-
-.B3 {
-	top: calc(50px + 2*(100% - 100px)/3);
 	background: black;
 }
 
@@ -37,11 +27,11 @@ body {
 	background: black;
 }
 
-.B4 {
+.news {
 	position: absolute;
-	bottom: 0px;
-	left: 40%;
-	width: 60%;
-	height: 25%;
+	bottom: 50px;
+	left: 50px;
+	width: calc(100% - 100px);
+	height: 100px;
 	background: black;
 }

@@ -8,10 +8,8 @@
 	<link rel="stylesheet" href="assets/css/weather-icons.css">
 </head>
 <body ng-controller="MainController as main">
-	<div class="B1" ui-view="weather"></div>
-	<div class="B2"></div>
-	<div class="B3"></div>
-	<div class="B4"></div>
+	<div class="weather" ui-view="weather"></div>
+	<div class="news" ui-view="news"></div>
 	<div class="main-msg" ui-view="mainScreen"></div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
@@ -19,11 +17,13 @@
 
 	<script src="app/app.services.js"></script>
 	<script src="app/weather/weather.service.js"></script>
+	<script src="app/news/news.service.js"></script>
 	<script src="app/datafactory.js"></script>
 
 	<script src="app/app.controllers.js"></script>
 	<script src="app/main.controller.js"></script>
 	<script src="app/weather/weather.controller.js"></script>
+	<script src="app/news/news.controller.js"></script>
 	<script src="app/mainScreen/mainScreen.controller.js"></script>
 	<script src="app/time/time.controller.js"></script>
 	<script src="app/time/day.controller.js"></script>

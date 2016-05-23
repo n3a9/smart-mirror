@@ -2,9 +2,9 @@
 
 appControllers.controller('WeatherController', WeatherController);
 
-WeatherController.$inject = ['$scope', 'Weather', 'datafactory'];
+WeatherController.$inject = ['Weather', 'datafactory'];
 
-function WeatherController($scope, Weather, datafactory) {
+function WeatherController(Weather, datafactory) {
 	var vm = this;
 	var weatherCodes = datafactory.getWeatherCodes();
 
@@ -23,7 +23,6 @@ function WeatherController($scope, Weather, datafactory) {
 
 function weather(Weather, vm, weatherCodes) {
 	Weather.getWeather().then(function(weather) {
-		console.log(weather);
 		if (weather.name) {
 			vm.temp = Math.round(weather.main.temp - 273.15);
 			vm.current = weather.name;

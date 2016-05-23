@@ -6,7 +6,7 @@ body {
   color: #FFF;
   font-family: "SF"; }
 
-.B1, .B2, .B3 {
+.weather, .B2, .B3 {
   position: absolute;
   top: 50px;
   left: 50px;
@@ -30,12 +30,12 @@ body {
   height: calc((100% - 100px)/3);
   background: black; }
 
-.B4 {
+.news {
   position: absolute;
-  bottom: 0px;
-  left: 40%;
-  width: 60%;
-  height: 25%;
+  bottom: 50px;
+  left: 50px;
+  width: calc(100% - 100px);
+  height: 100px;
   background: black; }
 
 /*# sourceMappingURL=style.css.map */
