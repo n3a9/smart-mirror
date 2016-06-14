@@ -24,13 +24,13 @@ function WeatherController(Weather, datafactory) {
 function weather(Weather, vm, weatherCodes) {
 	Weather.getWeather().then(function(weather) {
 		if (weather.name) {
-			vm.temp = Math.round(weather.main.temp - 273.15);
+			vm.temp = Math.round(weather.main.temp);
 			vm.current = weather.name;
 			vm.imageCode = weatherCodes[weather.weather[0].icon];
 			var weatherDesc = weather.weather[0].description;
 			vm.description = weatherDesc.charAt(0).toUpperCase() + weatherDesc.slice(1);
-			vm.high = Math.round(weather.main.temp_max - 273.15);
-			vm.low = Math.round(weather.main.temp_min - 273.15);
+			vm.high = Math.round(weather.main.temp_max);
+			vm.low = Math.round(weather.main.temp_min);
 		} else {
 			vm.current = weather;
 		}
