@@ -18,7 +18,7 @@ function Weather($http) {
 			url: 'http://api.openweathermap.org/data/2.5/weather?q=LosAltos,CA&units=imperial&APPID=40945b64903870c5651aa89cc43e4f97'
 		}).then(function success(response) {
 			return response.data;
-		}, function error(error) {
+		}, function errorthrown(error) {
 			return error.data.message;
 		});
 	}

@@ -21,7 +21,7 @@ function News($http) {
 			}
 		}).then(function success(response) {
 			return response.data;
-		}, function error(error) {
+		}, function errorthrown(error) {
 			return error.data;
 		});
 	}
