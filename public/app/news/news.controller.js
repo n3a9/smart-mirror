@@ -10,8 +10,8 @@ function NewsController($scope, News) {
 	var topNews;
 
 	News.getNews().then(function(news) {
-		topNews = news.value;
-		vm.newsItem = topNews[0].name;
+		topNews = news.articles;
+		vm.newsItem = topNews[0].title;
 	});
 
 	function updateLater() {
@@ -33,5 +33,5 @@ function NewsController($scope, News) {
 }
 
 function getNextItem(topNews, counter) {
-	return topNews[counter].name;
+	return topNews[counter].title;
 }
