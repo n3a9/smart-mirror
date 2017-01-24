@@ -1,4 +1,4 @@
-# Smart Mirror
+# Smart Mirror [![Travis](https://img.shields.io/travis/aggarwalneeraj141/smart-mirror.svg)]()
 Software for a smart mirror that informs the user of basic weather and calendar events.
 
 ![preview](https://cloud.githubusercontent.com/assets/7104017/22235705/0a81f616-e1b6-11e6-811f-23c4ee683c70.png)
