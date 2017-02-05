@@ -36,6 +36,16 @@
 
 		<script src="app/app.routes.js"></script>
 		<script src="app/app.js"></script>
+
+		<script src="app/calendarAPI.js"></script>
+		<script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+		
+	    <div id="authorize-div">
+        	<button class="btn" id="authorize-button" onclick="handleAuthClick(event)">Authorize Google Calendar</button>
+        </div>
+        <br />
+        <pre id="output"></pre>
+
 	</body>
 
 </html>

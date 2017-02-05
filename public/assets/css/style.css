@@ -1,8 +1,9 @@
 @font-face {
   font-family: "SF";
   src: url("../fonts/San Francisco Display Thin.ttf"); }
+  
 body {
-  background: black;
+  background: #000;
   color: #FFF;
   font-family: "SF"; }
 
@@ -37,5 +38,22 @@ body {
   width: calc(100% - 100px);
   height: 100px;
   background: black; }
+
+.btn {
+  background-color: #000;
+  font-family: "SF";
+  font-size: x-large;
+  margin-left: -.6em;
+}
+
+#output, #authorize-div .btn{
+  background: #000;
+  border-color: #000;
+  color: #FFF;
+  padding-top: 18em;
+  padding-left: 2.15em;
+  font-family: "SF";
+  font-size: x-large;
+}
 
 /*# sourceMappingURL=style.css.map */

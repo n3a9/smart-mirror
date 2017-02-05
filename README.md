@@ -32,6 +32,24 @@ In the function getNews(), you will find `url: [long url to pull news data]`.
 
 To change source, change from `source=time` to the source of your choice by removing time. In the [news list](https://newsapi.org/sources), below the icons, is the parameter you should use to replace `time` (Time was set as default).
 
+## Google Calendar
+
+In order to add Google Calendar, you have to create a client-id. To do this:
+
+1. Ensure the calendar you want to use with your smart mirror is publicly accessible.
+2. Go to https://console.developers.google.com/flows/enableapi?apiid=calendar and create a new project.
+2. Then click on Go to Credentials, then select Overview and then Credentials again until you reach this screen.
+![screen](https://cloud.githubusercontent.com/assets/7104017/16212779/f316be6a-36fe-11e6-86a6-11953598e5bc.jpg)
+3. Click on the second tab called OAuth consent screen.
+4. Select an email address, select a product name and then hit save.
+5. Then navigate to the original credentials tab, and select Create credentials -> OAuth client ID
+6. Select web application, then add `http://localhost:8000` and `http://localhost:1337` as Authorized Javascript origins, and select Create.
+7. It will then give you a pop-up, giving you your client-ID and client secret.
+8. Copy your client-ID.
+9. In the project directory, navigate to smart-mirror -> public -> app -> calendarAPI.js
+10. At the top of the file, replace `var CLIENT_ID = 'insert-client-id-here';` with `var ClIENT_ID = '[YOURCLIENTID]'`
+11. Run the project, and then authorize access to your **public** calendar.
+
 ## How to Run
 Run in terminal:
 
