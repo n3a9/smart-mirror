@@ -10,7 +10,7 @@ You can change the units and location of the weather data that is being pulled.
 
 Navigate to `smart-mirror->public->app->weather->weather.service.js`
 
-In the function getWeather(), you will find "url: [long url to pull weather data]."
+In the function getWeather(), you will find `url: [long url to pull weather data]`.
 
 **To change location**
 
@@ -28,9 +28,9 @@ You can change the source of your news. Because [News API](https://newsapi.org) 
 
 Navigate to `smart-mirror->public->app->news->news.service.js`
 
-In the function getNews(), you will find "url: [long url to pull news data]."
+In the function getNews(), you will find `url: [long url to pull news data]`.
 
-To change source, change from `source=time` to the source of your choice by removing time. In the [news list](https://newsapi.org/sources), below the icons, is the parameter you should use to replace `time` (Time was set as default news source).
+To change source, change from `source=time` to the source of your choice by removing time. In the [news list](https://newsapi.org/sources), below the icons, is the parameter you should use to replace `time` (Time was set as default).
 
 ## How to Run
 Run in terminal:
