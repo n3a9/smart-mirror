@@ -1,7 +1,22 @@
-# Smart Mirror [![Travis](https://img.shields.io/travis/aggarwalneeraj141/smart-mirror.svg)]()
-Software for a smart mirror that informs the user of basic weather and calendar events, maintained with a PIR motion sensor.
+# Smart Mirror [![Travis](https://img.shields.io/travis/n3a9/smart-mirror.svg)]()
+Software for a smart mirror that informs the user of basic weather and calendar events, maintained with a PIR motion sensor that detects movement and maintains monitor display.
 
-![preview](https://cloud.githubusercontent.com/assets/7104017/22235705/0a81f616-e1b6-11e6-811f-23c4ee683c70.png)
+## Table of Contents
+
+* [Set Up](#set-up)
+  * [Things you need](#things-you-need)
+  * [Motion Sensor Connection](#motion-sensor-connection)
+* [Customize](#customize)
+  * [Weather Data](#weather-data)
+    * [Location](#to-change-location)
+    * [Units](#to-change-units)
+  * [News Source](#news-source)
+* [Google Calendar](#google-calendar)
+* [How to Run](#how-to-run)
+  * [Dashboard](#dashboard)
+  * [Motion Sensor Monitor Control](#motion-sensor-monitor-control)
+* [License](#license)
+
 
 ## Set Up
 
@@ -24,8 +39,6 @@ Connect OUT (output - shown in pictures with white wire) to pinout 7 for GPIO4 (
 
 Connect GND (ground - shown in pictures with grey wire) to pinout 6 to ground and connect the circuit.
 
-
-![pinout](https://openclipart.org/image/2400px/svg_to_png/264608/gpiopinsv2withpi.png)
 ![img_9226](https://cloud.githubusercontent.com/assets/7104017/24069440/61043642-0b65-11e7-8501-35c18468be4e.JPG)
 ![img_9227](https://cloud.githubusercontent.com/assets/7104017/24069439/5ff43996-0b65-11e7-9f10-4471c2d35077.JPG)
 
