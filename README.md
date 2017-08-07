@@ -2,23 +2,45 @@
 Software for a smart mirror that informs the user of basic weather and calendar events, maintained with a PIR motion sensor that detects movement and maintains monitor display.
 
 ## Table of Contents
-
-* [Set Up](#set-up)
+* [Running Software](#running-software)
+  * [Smart Mirror Dashboard](#smart-mirror-dashboard)
+  * [Motion Sensor Monitor Control](#motion-sensor-monitor-control)
+* [Hardware Set Up](#hardware-set-up)
   * [Things you need](#things-you-need)
   * [Motion Sensor Connection](#motion-sensor-connection)
-* [Customize](#customize)
+* [Customize Data](#customize-data)
   * [Weather Data](#weather-data)
     * [Location](#to-change-location)
-    * [Units](#to-change-units)
+    * [Weather Units](#to-change-weather-units)
   * [News Source](#news-source)
 * [Google Calendar](#google-calendar)
-* [How to Run](#how-to-run)
-  * [Dashboard](#dashboard)
-  * [Motion Sensor Monitor Control](#motion-sensor-monitor-control)
 * [License](#license)
 
+## Running Software
 
-## Set Up
+### Smart Mirror Dashboard
+
+Run in terminal:
+
+`cd [to the location you want to keep it]`
+
+`git clone https://github.com/aggarwalneeraj141/smart-mirror.git`
+
+`cd smart-mirror`
+
+`npm install`
+
+`npm start`
+
+Go to [localhost:1337](http://localhost:1337) in a browser
+
+### Motion Sensor Monitor Control
+
+Inside `py_scripts`, run `detect_motion.py` to check that your motion sensor is properly connected and working.
+
+Then run `monitor_control.py` in the same directory as `monitor_on.sh` and `monitor_off.sh`, which will turn off the monitor after 10 seconds of no motion, and turn on the monitor upon new movement.
+
+## Hardware Set Up
 
 ### Things you need:
 
@@ -42,7 +64,7 @@ Connect GND (ground - shown in pictures with grey wire) to pinout 6 to ground an
 ![img_9226](https://cloud.githubusercontent.com/assets/7104017/24069440/61043642-0b65-11e7-8501-35c18468be4e.JPG)
 ![img_9227](https://cloud.githubusercontent.com/assets/7104017/24069439/5ff43996-0b65-11e7-9f10-4471c2d35077.JPG)
 
-## Customize
+## Customize Data
 
 ### Weather Data
 You can change the units and location of the weather data that is being pulled.
@@ -51,12 +73,12 @@ Navigate to `smart-mirror->public->app->weather->weather.service.js`
 
 In the function getWeather(), you will find `url: [long url to pull weather data]`.
 
-**To change location**
+#### To change location
 
 Replace `?q=LosAltos,CA` with `?q=[yourcity]`
 Make sure not to add any spaces or underscores.
 
-**To change units**
+#### To change weather units
 
 For Kelvin, delete `&units=imperial`
 
@@ -89,29 +111,5 @@ In order to add Google Calendar, you have to create a client-id. To do this:
 10. At the top of the file, replace `var CLIENT_ID = 'insert-client-id-here';` with `var ClIENT_ID = '[YOURCLIENTID]'`
 11. Run the project, and then authorize access to your **public** calendar.
 
-## How to Run
-
-### Dashboard
-
-Run in terminal:
-
-`cd [to the location you want to keep it]`
-
-`git clone https://github.com/aggarwalneeraj141/smart-mirror.git`
-
-`cd smart-mirror`
-
-`npm install`
-
-`npm start`
-
-Go to [localhost:1337](http://localhost:1337) in a browser
-
-### Motion Sensor Monitor Control
-
-Inside `py_scripts`, run `detect_motion.py` to check that your motion sensor is properly connected and working.
-
-Then run `monitor_control.py` in the same directory as `monitor_on.sh` and `monitor_off.sh`, which will turn off the monitor after 10 seconds of no motion, and turn on the monitor upon new movement.
-
 ## License
-Licensed under the ISC License.
+MIT
