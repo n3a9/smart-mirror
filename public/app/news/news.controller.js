@@ -20,7 +20,7 @@ function NewsController($scope, News) {
 				vm.newsItem = getNextItem(topNews, counter);
 			});
 			updateLater();
-			if (counter == topNews.length) {
+			if (counter === topNews.length) {
 				counter = 0;
 			}
 			else {
