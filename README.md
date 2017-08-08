@@ -18,6 +18,8 @@ Software for a smart mirror that informs the user of basic weather and calendar 
 
 ## Running Software
 
+<img width="1676" src="https://user-images.githubusercontent.com/7104017/29051758-c19fb306-7b99-11e7-90ac-85ff19369227.png">
+
 ### Smart Mirror Dashboard
 
 Run in terminal:
