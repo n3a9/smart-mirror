@@ -11,7 +11,7 @@
     "url": "https://github.com/n3a9/smart-mirror.git"
   },
   "bugs": {
-    "url": "https://github.com/n3a0/smart-mirror/issues"
+    "url": "https://github.com/n3a9/smart-mirror/issues"
   },
   "dependencies": {
     "express": "^4.13.4",
