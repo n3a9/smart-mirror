@@ -64,14 +64,17 @@ Connect GND (ground - shown in pictures with grey wire) to pinout 6 to ground an
 ## Customize Data
 
 ### Weather Data
+
+This uses the OpenWeatherMap API found [here](https://www.openweathermap.org/api).
+
 You can change the units and location of the weather data that is being pulled.
 
 Navigate to `smart-mirror/public/app/weather/weather.service.js`
 
 In the function getWeather(), you will find `url: [long url to pull weather data]`.
 
-#### To change location
-Default location is Los Altos. Replace `?q=LosAltos,CA` with `?q=[yourcity]`.
+#### To change Zip Code
+Default location is Los Altos. Replace `?zip=94024,us` with `?zip=[yourzip]`.
 
 Make sure not to add any spaces or underscores.
 
